@@ -1,3 +1,5 @@
+// Define the doGet function, which handles incoming HTTP GET requests.
+
 function doGet(e) {
     var output; // Declare a variable to store the response data.
   
@@ -21,4 +23,3 @@ function doGet(e) {
     // Create a JSON response from the output object and set the MIME type to JSON.
     return ContentService.createTextOutput(JSON.stringify(output)).setMimeType(ContentService.MimeType.JSON);
   }
-  
